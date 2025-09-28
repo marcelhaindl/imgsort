@@ -26,6 +26,6 @@ Please ensure your pull request meets the following requirements:
 - Open your pull request against the `main` branch.
 - All tests pass in available continuous integration systems (e.g., GitHub Actions).
 - Add or modify tests to cover your code changes.
-- Follow the checklist in the [Pull Request Template](.github/PULL_REQUEST_TEMPLATE.md:1).
+- Follow the checklist in the [Pull Request Template](.github/PULL_REQUEST_TEMPLATE.md).
 
 Thank you for contributing!

@@ -1,6 +1,6 @@
 name: Feature Request
 description: Got an idea for a feature that imgsort doesn't have currently?  Submit your idea here!
-labels: ["type/feature"]
+labels: ["enhancement"]
 body:
   - type: markdown
     attributes:

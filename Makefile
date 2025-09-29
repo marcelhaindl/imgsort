@@ -1,5 +1,5 @@
-# Default target: build and test
-all: build test
+# Default target: build, test, and lint
+all: build test lint
 
 # Build the application
 build:
@@ -15,9 +15,14 @@ test:
 	@echo "Testing..."
 	@go test ./... -v
 
+# Lint the code
+lint:
+	@echo "Linting..."
+	@golangci-lint run
+
 # Clean the binary
 clean:
 	@echo "Cleaning..."
-	@rm -f imgsort
+	@rm -f bin/imgsort
 
-.PHONY: all build run test clean
+.PHONY: all build run test clean lint

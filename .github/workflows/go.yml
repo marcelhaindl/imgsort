@@ -7,13 +7,12 @@ permissions:
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
-
-  build:
+  build-test-lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,30 +25,8 @@ jobs:
       - name: Build
         run: go build -v ./...
 
-  test:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Go
-        uses: actions/setup-go@v4
-        with:
-          go-version: "1.25"
-
       - name: Test
         run: go test -v ./...
-
-  lint:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Go
-        uses: actions/setup-go@v4
-        with:
-          go-version: "1.25"
 
       - name: Setup golangci-lint
         uses: golangci/golangci-lint-action@v8

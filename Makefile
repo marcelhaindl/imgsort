@@ -25,4 +25,4 @@ clean:
 	@echo "Cleaning..."
 	@rm -f bin/imgsort
 
-.PHONY: all build run test clean
+.PHONY: all build run test clean lint

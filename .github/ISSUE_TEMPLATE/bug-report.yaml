@@ -50,4 +50,4 @@ body:
     id: os-ver
     attributes:
       label: Operating System
-      description: The operating system you are using to run Gin
+      description: The operating system you are using to run imgsort

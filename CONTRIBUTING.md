@@ -12,7 +12,7 @@ We welcome both issue reports and pull requests! Please follow these guidelines 
 
 - **Reporting a bug:**
   - Please provide a clear description of your issue, and a minimal reproducible code example if possible.
-  - Include the Gin version (or commit reference), Go version, and operating system.
+  - Include the version (or commit reference), Go version, and operating system.
   - Indicate whether you can reproduce the bug and describe steps to do so.
 
 - **Feature requests:**

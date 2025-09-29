@@ -10,6 +10,7 @@ updates:
     schedule:
       interval: "daily"
     commit-message:
-      prefix: "deps"
+      prefix: "chore(deps)"
     labels:
       - "dependencies"
+      - "bot"

@@ -48,13 +48,13 @@ linters:
     rules:
       - linters:
           - staticcheck
-        text: 'SA1019:'   # Ignore deprecation warnings (optional, can remove if you want strictness)
+        text: "SA1019:"
       - linters:
           - revive
-        path: _test\.go   # Loosen some linting rules in test files
+        path: _test\.go
       - linters:
           - gosec
-        path: _test\.go   # Don’t apply gosec rules to test files
+        path: _test\.go
 
 formatters:
   enable:
@@ -65,7 +65,7 @@ formatters:
   settings:
     gofmt:
       rewrite-rules:
-        - pattern: 'interface{}'
-          replacement: 'any'
+        - pattern: "interface{}"
+          replacement: "any"
   exclusions:
     generated: lax

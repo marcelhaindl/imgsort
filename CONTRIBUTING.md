@@ -7,7 +7,7 @@ We welcome both issue reports and pull requests! Please follow these guidelines 
 - **Before opening a new issue:**
   - Use the search tool to check for existing issues or feature requests.
   - Review existing issues and provide feedback or react to them.
-  - Use English for all communications — it is the language all maintainers read and write.
+  - Use English for all communications
   - For bug reports involving sensitive security issues, email <marcel.haindl@gmail.com> instead of posting publicly.
 
 - **Reporting a bug:**

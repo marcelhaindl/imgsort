@@ -1,7 +1,7 @@
 # This workflow will build, test, and lint a golang project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
 
-name: Go
+name: Go Test
 permissions:
   contents: read
 
@@ -21,7 +21,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: "^1"
+          go-version: "1.25"
 
       - name: Build
         run: go build -v ./...
@@ -35,7 +35,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: "^1"
+          go-version: "1.25"
 
       - name: Test
         run: go test -v ./...
@@ -49,10 +49,10 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: "^1"
+          go-version: "1.25"
 
-      - name: Install golangci-lint
-        run: go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
-
-      - name: Lint
-        run: golangci-lint run ./...
+      - name: Setup golangci-lint
+        uses: golangci/golangci-lint-action@v8
+        with:
+          version: v2.5.0
+          args: --verbose

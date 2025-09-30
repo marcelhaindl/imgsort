@@ -1,6 +1,6 @@
 # Contributing
 
-We welcome both issue reports and pull requests! Please follow these guidelines to help maintainers respond effectively.
+I welcome both issue reports and pull requests! Please follow these guidelines to help maintainers respond effectively.
 
 ## Issues
 

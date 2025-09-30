@@ -8,6 +8,7 @@ We welcome both issue reports and pull requests! Please follow these guidelines 
   - Use the search tool to check for existing issues or feature requests.
   - Review existing issues and provide feedback or react to them.
   - Use English for all communications
+  - For questions, configuration or deployment problems, please use the [Discussions Forum](https://github.com/marcelhaindl/imgsort/discussions).
   - For bug reports involving sensitive security issues, email <marcel.haindl@gmail.com> instead of posting publicly.
 
 - **Reporting a bug:**
@@ -26,6 +27,6 @@ Please ensure your pull request meets the following requirements:
 - Open your pull request against the `main` branch.
 - All tests pass in available continuous integration systems (e.g., GitHub Actions).
 - Add or modify tests to cover your code changes.
-- Follow the checklist in the [Pull Request Template](.github/PULL_REQUEST_TEMPLATE.md).
+- Follow the checklist in the [Pull Request Template](.github/PULL_REQUEST_TEMPLATE/pull_request_template.md).
 
 Thank you for contributing!
